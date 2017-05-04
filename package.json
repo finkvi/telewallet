@@ -1,0 +1,35 @@
+{
+  "name": "telewallet",
+  "version": "1.0.0",
+  "description": "Telegram Bot as Ethereum Wallet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/finkvi/telewallet.git"
+  },
+  "keywords": [
+    "Ethereum",
+    "Telegram"
+  ],
+  "author": "Fink Viktor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/finkvi/telewallet/issues"
+  },
+  "homepage": "https://github.com/finkvi/telewallet#readme",
+  "dependencies": {
+    "console-stamp": "^0.2.5",
+    "ethereumjs-util": "^5.1.1",
+    "google-cloud": "^0.53.0",
+    "node-telegram-bot-api": "^0.27.0",
+    "querystring": "^0.2.0",
+    "request": "^2.81.0",
+    "uuid": "^3.0.1",
+    "web3": "^0.18.4",
+    "xml2json": "^0.11.0",
+    "yandex-speech": "0.0.13"
+  }
+}
