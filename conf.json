@@ -1,10 +1,45 @@
 {
-    "bot": {      
-         "EthWalletDev_bot": {
-            "telegram_token": "358616486:AAG-7KVmFNfnvlzXjU7BlymqjMznwKktQ0c",
-            "telegram_url": "https://telewallet-finkvi.c9users.io",
-            "port": 8080,
-            "nodeurl": "https://eth.j2u.ru:8766"
+    "bot":{
+        "EthWalletDev_bot":{
+            "telegram_token":"358616486:AAG-7KVmFNfnvlzXjU7BlymqjMznwKktQ0c",
+            "telegram_url":"https://telewallet-finkvi.c9users.io",
+            "port":8080,
+            "nodeurl":"https://eth.j2u.ru:8766",
+            "locktimeout":300000
+        }
+    },
+    "sms":{
+        "ThrowTwilio":true,
+        "Twilio":{
+            "accountSid":"AC775d575d3aaaa324bf4de0713cbb7614",
+            "authToken":"3a23d52a807f2fc61b5089aa5dcc4f6e",
+            "from":"+16193206801"
+        },
+        "HttpGet":{
+            "url":"http://bytehand.com:3800/send",
+            "id":"7769",
+            "key":"326E714171834C1B",
+            "from":"EthWallet"
+        }
+    },
+    "mail":{
+        "ThrowPostfix":true,
+        "Direct":{
+            "host":"smtp.mailgun.org",
+            "port":465,
+            "secure":true,
+            "auth":{
+                "user":"postmaster@mg.j2u.ru",
+                "pass":"qazwsx123"
+            }
+        },
+        "Postfix":{
+            "host":"localhost",
+            "port":25,
+            "secure":false,
+            "tls":{
+                "rejectUnauthorized":false
+            }
         }
     }
 }
